@@ -128,6 +128,16 @@ footer h3{
 /*script do botão do java*/
 .container-botao-java{
     padding-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.botao-java{
+    margin-bottom: 40px;
+    border-radius: 50%;
+    background: linear-gradient(300deg, #006400, #32cd32, #7fff00, #adff2f, #006400);
+    background-size: 300% 300%;
+    animation: gradient-animation 15s ease infinite;
 }
 /*fim carrossel*/
 
@@ -137,3 +147,14 @@ footer h3{
     justify-content:flex-end
 }
 /*fim*/
+
+/*script dos links das receitas da pagina NUTRIÇÃO*/
+.carousel-caption a {
+    color: inherit; /* Mantém a cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.carousel-caption a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse, se desejar */
+}
+/*FIM*/
