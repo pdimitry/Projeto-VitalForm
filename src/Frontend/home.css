@@ -1,0 +1,196 @@
+.container-fluid{
+    background-color: #333;
+    font-family:  system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.container-fluid a{
+    color: whitesmoke;
+}
+.container-fluid img{
+    border-radius: 50%;
+}
+.container-1 img{
+    padding-left: 50px;
+}
+a{
+    padding: 50px;
+}
+li{
+    padding: 30px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*script do corpo do site*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 1500px;
+    
+}
+/*fim*/
+
+
+
+/*script do lado esquedo home*/
+.container-1{
+    background-color: rgb(154, 180, 113);
+    padding-top: 200px;
+    padding-left: 10px;
+    color: whitesmoke;
+    
+}
+/*fim*/
+
+/*script do lado direito home*/
+.container-2 {
+    background-color: whitesmoke;
+    padding-top: 200px;
+    padding-left: 10px;
+}
+/*fim*/
+
+
+/*script do lado esquerdo da home*/
+h1{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    display: flex;
+    justify-content: center;
+}
+.Imagem-VitalForm{
+    display: flex;
+    justify-content: center;
+}
+/*fim*/
+
+/*script do footer*/
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+footer h3{
+    display: flex;
+    justify-content: left;
+    padding-left: 10px;
+}
+
+.footer-center{
+    display: flex;
+    justify-content: center;
+}
+/*fim*/
+
+
+/*script do sobre nós*/
+.container-sobre{
+    
+}
+/*fim sobre nós*/
+
+
+/*script do carrossel*/
+.carrossel1{
+    padding-right: 10px;
+}
+
+/*script do botão do java*/
+.container-botao-java{
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.botao-java{
+    margin-bottom: 40px;
+    border-radius: 50%;
+    background: linear-gradient(300deg, #006400, #32cd32, #7fff00, #adff2f, #006400);
+    background-size: 300% 300%;
+    animation: gradient-animation 15s ease infinite;
+}
+/*fim carrossel*/
+
+/*script do navbar*/
+.navbar-collapse{
+    display: flex;
+    justify-content:flex-end
+}
+/*fim*/
+
+/*script dos links das receitas da pagina NUTRIÇÃO*/
+.carousel-caption a {
+    color: inherit; /* Mantém a cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.carousel-caption a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse, se desejar */
+}
+/*FIM*/
+
+/*script imagem do gráfico*/
+.imagem-gráfico{
+    height: 300px;
+    width: 600px;
+}
+/*script imagem do gráfico*/
+
+/*script texto do cálculo*/
+.caixa-cálculo{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.texto-cálculo {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 300px;
+    text-align: center;
+}
+
+.texto-cálculo p {
+    margin: 0;
+    font-size: 18px;
+}
+/*script texto do cálculo*/
+
+
+
+/*SCRIPT PARA A PAGINA COMUNIDADE*/
+
+/*FIM DA SCRIPT PARA A PAGINA COMUNIDADE*/
