@@ -4,13 +4,13 @@
 <a href= "https://www.fecap.br/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZPrRa89Kma0ZZogxm0pi-tCn_TLKeHGVxywp-LXAFGR3B1DPouAJYHgKZGV0XTEf4AE&usqp=CAU" alt="FECAP - Fundação de Comércio Álvares Penteado" border="0"></a>
 </p>
 
-# Nome do Projeto
+# VitalForm
 
-## Nome do Grupo
+## Grupo 7
 
-## Integrantes: <a href="https://www.linkedin.com/in/victorbarq/">Goku Sayajin</a>, <a href="https://www.linkedin.com/in/victorbarq/">Saitama One</a>, <a href="https://www.linkedin.com/in/victorbarq/">Ikki de Fenix</a>, <a href="https://www.linkedin.com/in/victorbarq/">Yusuke Urameshi</a>, <a href="https://www.linkedin.com/in/victorbarq/">Roronoa Zoro</a>
+## Integrantes: <a href="https://www.linkedin.com/in/pedrodimitry/">Pedro Dimitry Zyrianoff</a>, <a href="https://www.linkedin.com/in/arthurlins/">Arthur LIns Belarmino</a>, <a href="https://www.linkedin.com/in/victorbarq/">Vitor Wang</a>, <a href="https://www.linkedin.com/in/victorbarq/">Lucas Kenichi</a>
 
-## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Dr. Victor Von Doom</a>, <a href="https://www.linkedin.com/in/victorbarq/">Me. Saitama</a>, <a href="https://www.linkedin.com/in/victorbarq/">Dr. Strange</a>, <a href="https://www.linkedin.com/in/victorbarq/">Me. Yoda</a>, <a href="https://www.linkedin.com/in/victorbarq/">Dr. Gero</a>
+## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Dr. David Lemos</a>, <a href="https://www.linkedin.com/in/victorbarq/">Victor Rosseti</a>, <a href="https://www.linkedin.com/in/victorbarq/">Dr. Francisco Escobar</a>, <a href="https://www.linkedin.com/in/victorbarq/">Katia Bosque</a>
 
 ## Descrição
 
@@ -20,12 +20,12 @@
 </p>
 
 
-De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
+Nosso site é um portal completo para quem busca melhorar sua saúde, bem-estar e forma física. Com uma interface intuitiva e conteúdo especializado, oferecemos orientações sobre hábitos saudáveis, nutrição equilibrada, treinos personalizados e cuidados com a saúde mental. Ideal para quem quer começar uma jornada de transformação pessoal, nosso site abrange:
 <br><br>
-Meu projeto ajuda estudantes FECAP a configurarem seus githubs.
+Nosso objetivo é fornecer um guia confiável e acessível para quem deseja adotar um estilo de vida saudável, com informações baseadas em ciência e conteúdos atualizados regularmente.
+
 <br><br>
-May the force be with you!
-<br><br>
+
 
 ## 🛠 Estrutura de pastas
 
