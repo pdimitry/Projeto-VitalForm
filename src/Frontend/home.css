@@ -1,6 +1,10 @@
 .navbar {
     padding: 0 !important;
   }
+  .navbar-brand {
+    pointer-events: none;
+    cursor: default;
+  }
 .container-fluid{
     background-color: #333;
     font-family:  system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
@@ -57,7 +61,7 @@ body {
 .container-1{
     background-color: #00FF7F;
     padding-top: 100px;
-    padding-left: 150px;
+    padding-left: 100px;
     color: whitesmoke;
     
 }
@@ -145,7 +149,7 @@ footer h3{
 }
 .carrossel1 img {
     width: 100%;
-    height: 600px;
+    height: 800px;
   }
   /*fim do script do carrossel*/
 
@@ -191,8 +195,44 @@ footer h3{
 /*script imagem do gráfico*/
 
 
+/* home responsivo*/
+.navbar {
+    padding: 0 !important;
+  }
+  
+  .navbar-brand {
+    margin-left: 20px;
+  }
+  
+  .navbar-toggler {
+    margin-right: 20px;
+  }
+  
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-collapse {
+      justify-content: center;
+    }
+    .navbar-nav {
+      flex-direction: column;
+    }
+    .nav-item {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .navbar-brand {
+      margin-left: 10px;
+    }
+    .navbar-toggler {
+      margin-right: 10px;
+    }
+  }
 
 
-/*SCRIPT PARA A PAGINA COMUNIDADE*/
 
-/*FIM DA SCRIPT PARA A PAGINA COMUNIDADE*/
+
