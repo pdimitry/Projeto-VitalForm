@@ -51,7 +51,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 1000px;
-    
 }
 /*fim*/
 
@@ -60,8 +59,7 @@ body {
 /*script do lado esquedo home*/
 .container-1{
     background-color: #00FF7F;
-    padding-top: 100px;
-    padding-left: 100px;
+    padding-top: 50px;
     color: whitesmoke;
     
 }
@@ -70,7 +68,7 @@ body {
 /*script do lado direito home*/
 .container-2 {
     background-color: whitesmoke;
-    padding-top: 250px;
+    padding-top: 100px;
     padding-left: 10px;
 }
 /*fim*/
@@ -135,7 +133,7 @@ footer h3{
 
 
 /*script do sobre nós*/
-.container-sobre{
+.container-sobre h1{
     
 }
 /*fim sobre nós*/
@@ -148,8 +146,12 @@ footer h3{
   
 }
 .carrossel1 img {
-    width: 100%;
-    height: 800px;
+  width: 100%;
+  height: 660px;
+  margin: auto auto; /* Add a 20px margin on top and bottom */
+  padding: 20px; /* Add a 20px padding on all sides */
+  background-color: #000; /* Set the background color to black */
+  border: 1px solid #000; /* Add a 1px black border */
   }
   /*fim do script do carrossel*/
 
@@ -210,6 +212,10 @@ footer h3{
   
   .navbar-collapse {
     justify-content: flex-end;
+  }
+  .img-vitalform{
+    display: flex;
+    justify-content: center;
   }
   
   @media (max-width: 768px) {
