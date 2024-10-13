@@ -62,6 +62,7 @@ body {
     padding-top: 50px;
     color: whitesmoke;
     
+    
 }
 /*fim*/
 
@@ -187,6 +188,9 @@ footer h3{
 .carousel-caption a:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse, se desejar */
 }
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  filter: invert(100%);
+}
 /*FIM*/
 
 /*script imagem do gráfico*/
@@ -218,26 +222,7 @@ footer h3{
     justify-content: center;
   }
   
-  @media (max-width: 768px) {
-    .navbar-collapse {
-      justify-content: center;
-    }
-    .navbar-nav {
-      flex-direction: column;
-    }
-    .nav-item {
-      margin-bottom: 10px;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .navbar-brand {
-      margin-left: 10px;
-    }
-    .navbar-toggler {
-      margin-right: 10px;
-    }
-  }
+ 
 
 
 
