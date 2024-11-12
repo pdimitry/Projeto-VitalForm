@@ -1,10 +1,6 @@
 .navbar {
     padding: 0 !important;
   }
-  .navbar-brand {
-    pointer-events: none;
-    cursor: default;
-  }
 .container-fluid{
     background-color: #333;
     font-family:  system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
@@ -51,6 +47,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 1000px;
+    
 }
 /*fim*/
 
@@ -59,9 +56,9 @@ body {
 /*script do lado esquedo home*/
 .container-1{
     background-color: #00FF7F;
-    padding-top: 50px;
+    padding-top: 100px;
+    padding-left: 150px;
     color: whitesmoke;
-    
     
 }
 /*fim*/
@@ -69,7 +66,7 @@ body {
 /*script do lado direito home*/
 .container-2 {
     background-color: whitesmoke;
-    padding-top: 100px;
+    padding-top: 250px;
     padding-left: 10px;
 }
 /*fim*/
@@ -134,11 +131,8 @@ footer h3{
 
 
 /*script do sobre nós*/
-.container-sobre h1{
+.container-sobre{
     
-}
-.container-sobre p{
-   
 }
 /*fim sobre nós*/
 
@@ -150,12 +144,8 @@ footer h3{
   
 }
 .carrossel1 img {
-  width: 100%;
-  height: 660px;
-  margin: auto auto; /* Add a 20px margin on top and bottom */
-  padding: 20px; /* Add a 20px padding on all sides */
-  background-color: #000; /* Set the background color to black */
-  border: 1px solid #000; /* Add a 1px black border */
+    width: 100%;
+    height: 600px;
   }
   /*fim do script do carrossel*/
 
@@ -191,9 +181,6 @@ footer h3{
 .carousel-caption a:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse, se desejar */
 }
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  filter: invert(100%);
-}
 /*FIM*/
 
 /*script imagem do gráfico*/
@@ -204,29 +191,8 @@ footer h3{
 /*script imagem do gráfico*/
 
 
-/* home responsivo*/
-.navbar {
-    padding: 0 !important;
-  }
-  
-  .navbar-brand {
-    margin-left: 20px;
-  }
-  
-  .navbar-toggler {
-    margin-right: 20px;
-  }
-  
-  .navbar-collapse {
-    justify-content: flex-end;
-  }
-  .img-vitalform{
-    display: flex;
-    justify-content: center;
-  }
-  
- 
 
 
+/*SCRIPT PARA A PAGINA COMUNIDADE*/
 
-
+/*FIM DA SCRIPT PARA A PAGINA COMUNIDADE*/

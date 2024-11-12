@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => (
     <footer>
     <h3 class="footer-center">VitalForm</h3>
-    <p>&copy; 2024 VitalForm. Todos os direitos reservados.</p>
+    <p class="teste">&copy; 2024 VitalForm. Todos os direitos reservados.</p>
     <nav>
         <ul>
             <li><Link to="/contato">Contato</Link></li>

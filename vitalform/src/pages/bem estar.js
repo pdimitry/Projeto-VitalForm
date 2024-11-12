@@ -1,9 +1,6 @@
 // src/pages/Home.js
 import React from 'react';
-import './nutrição.css';
-import logo from '../assets/imagens/imagem-logo/logo.png';
-import logoNavBar from '../assets/imagens/imagem-logo/logo.png';
-import { Link } from 'react-router-dom';
+import './bem estar.css';
 import img1 from '../assets/imagens/imagens-bem estar/comidas.jpg';
 import img2 from '../assets/imagens/imagens-bem estar/atividade-fisica.jpg';
 import img3 from '../assets/imagens/imagens-bem estar/sono de qualidade.jpeg';
@@ -11,41 +8,12 @@ import img4 from '../assets/imagens/imagens-bem estar/hábitos-nocivos.webp';
 import img5 from '../assets/imagens/imagens-bem estar/controle-de-estresse.jpg';
 import img6 from '../assets/imagens/imagens-bem estar/saúde-mental.png';
 import img7 from '../assets/imagens/imagens-bem estar/metas-e-objetivos.jpg';
+import Footer from '../components/footer';
 
 
 const Bemestar = () => (
   <div className="bemestar">
-    <header>
     
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            >VitalForm
-            <img src={logoNavBar} alt="Logo VitalForm" height="50"
-              width="50"/></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/nutrição">Nutrição</Link></li>
-              <li><Link to="/comunidade">Comunidade</Link></li>
-              <li><Link to="/fitness">Fitness</Link></li>
-              <li><Link to="/bemestar">Bem Estar</Link></li>
-            </ul>
-          </div>
-        </div>
-    </nav>
-    </header>
 
     <body>
         
@@ -171,9 +139,11 @@ const Bemestar = () => (
     
           </div>
       </div>
+    
         
     </body>
   </div>
+ 
 );
 
 export default Bemestar;

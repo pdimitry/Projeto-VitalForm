@@ -1,10 +1,4 @@
-.navbar {
-    padding: 0 !important;
-  }
-  .navbar-brand {
-    pointer-events: none;
-    cursor: default;
-  }
+
 .container-fluid{
     background-color: #333;
     font-family:  system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
@@ -27,19 +21,7 @@ a{
 li{
     padding: 30px;
 }
-.nav-item {
-    background-color: #333;
-    color: #fff; 
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px; 
-    cursor: pointer;
-  }
-  
-  .nav-item:hover {
-    background-color: #555;
-    color: #fff;
-  }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -130,15 +112,18 @@ footer h3{
     display: flex;
     justify-content: center;
 }
+
+.teste{
+    color: #fff;
+}
 /*fim*/
 
 
 /*script do sobre nós*/
-.container-sobre h1{
-    
-}
-.container-sobre p{
-   
+
+.container-sobre img{
+    height: 30vh;
+    width: 100%;
 }
 /*fim sobre nós*/
 
@@ -176,10 +161,7 @@ footer h3{
 /*fim carrossel*/
 
 /*script do navbar*/
-.navbar-collapse{
-    display: flex;
-    justify-content:flex-end
-}
+
 /*fim*/
 
 /*script dos links das receitas da pagina NUTRIÇÃO*/
@@ -204,26 +186,7 @@ footer h3{
 /*script imagem do gráfico*/
 
 
-/* home responsivo*/
-.navbar {
-    padding: 0 !important;
-  }
-  
-  .navbar-brand {
-    margin-left: 20px;
-  }
-  
-  .navbar-toggler {
-    margin-right: 20px;
-  }
-  
-  .navbar-collapse {
-    justify-content: flex-end;
-  }
-  .img-vitalform{
-    display: flex;
-    justify-content: center;
-  }
+
   
  
 

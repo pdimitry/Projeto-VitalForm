@@ -1,8 +1,8 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // Importa o CSS do carrossel
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 
-// Importando imagens locais para o carrossel
+
 import img1 from '../assets/imagens/imagens-carrosel-home/imagem1.jpeg';
 import img2 from '../assets/imagens/imagens-carrosel-home/imagem-2.jpeg';
 import img3 from '../assets/imagens/imagens-carrosel-home/imagem3.jpeg';
