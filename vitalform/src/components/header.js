@@ -7,10 +7,10 @@ const Header = () => (
     <header>
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">
-                    VitalForm
-                    <img src={logoNavBar} alt="Logo VitalForm" height="50" width="50" />
-                </a>
+                <li className="nav-item">
+                    <Link className="nav-link" to="/">VitalForm</Link>
+                    <img src={logoNavBar} alt="Logo VitalForm" height="40" width="40" />
+                </li>
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -39,14 +39,12 @@ const Header = () => (
                         <li className="nav-item">
                             <Link className="nav-link" to="/bemestar">Bem Estar</Link>
                         </li>
-                        {/* Botões de Cadastro e Login com classes diferentes */}
-                        <li className="nav-item">
-                            <Link className="nav-link btn-cadastro" to="/cadastro">Cadastro</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link btn-login" to="/login">Login</Link>
-                        </li>
                     </ul>
+                    {/* Botões de Cadastro e Login fora da lista para destaque */}
+                    <div className="navbar-buttons">
+                        <Link className="nav-link btn-cadastro" to="/cadastro">Cadastro</Link>
+                        <Link className="nav-link btn-login" to="/login">Login</Link>
+                    </div>
                 </div>
             </div>
         </nav>

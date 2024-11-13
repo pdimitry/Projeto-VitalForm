@@ -1,9 +1,22 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-buttons {
+    display: flex;
+    align-items: center;
+}
+
 .btn-cadastro {
     background-color: #28a745;
     color: white; 
     padding: 10px 20px;
     border-radius: 5px; 
     margin-left: 10px; 
+    text-decoration: none;
 }
 
 .btn-login {
@@ -12,8 +25,20 @@
     padding: 10px 20px; 
     border-radius: 5px; 
     margin-left: 10px; 
+    text-decoration: none; 
 }
 
 .btn-cadastro:hover, .btn-login:hover {
     opacity: 0.8; 
 }
+
+
+.nav-link {
+    margin: 0 10px; 
+    color: #000;
+}
+
+.nav-link:hover {
+    color: #007bff; 
+}
+
