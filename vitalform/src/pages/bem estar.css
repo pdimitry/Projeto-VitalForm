@@ -1,0 +1,63 @@
+body{
+
+    width: 100%;
+    height: 2000px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.card-image {
+width: 100%; /* Faz a imagem ocupar toda a largura do card */
+height: 200px; /* Define uma altura fixa para as imagens */
+object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+}
+
+/*script do footer*/
+footer {
+    background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+footer h3{
+    display: flex;
+    justify-content: left;
+    padding-left: 10px;
+}
+
+.footer-center{
+    display: flex;
+    justify-content: center;
+}
+
+.teste{
+    color: #fff;
+}
+/*fim*/
