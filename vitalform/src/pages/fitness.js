@@ -5,7 +5,6 @@ import Treino from '../components/Treino';
 
 const Fitness = () => (
   <div className="fitness">
-    
     <body>
       <Treino/>
     </body>

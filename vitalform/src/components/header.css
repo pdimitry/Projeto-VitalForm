@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 !important;
 }
 
 .navbar-buttons {
@@ -11,7 +12,7 @@
 }
 
 .btn-cadastro {
-    background-color: #28a745;
+    background-color: #28a745 !important;
     color: white; 
     padding: 10px 20px;
     border-radius: 5px; 
@@ -20,9 +21,9 @@
 }
 
 .btn-login {
-    background-color: #007bff;
+    background-color: #007bff !important;
     color: white;
-    padding: 10px 20px; 
+    padding: 10px 20px;
     border-radius: 5px; 
     margin-left: 10px; 
     text-decoration: none; 

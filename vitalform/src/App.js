@@ -12,6 +12,16 @@ import Contato from './pages/pages do footer/contato';
 import Serviço from './pages/pages do footer/serviço';
 import Sobre from './pages/pages do footer/sobre';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import CarouselReceitas from './components/CarouselReceitas';
+import ReceitasDeProteinas from './pages/html das receitas/proteinas';
+import SaladaColorida from './pages/html das receitas/saladaColorida';
+import FrangoGrelhado from './pages/html das receitas/frango';
+import SucoVerde from './pages/html das receitas/sucoVerde';
+import BoloDeBanana from './pages/html das receitas/boloBanana';
+import BatataDoce from './pages/html das receitas/batataDoce';
+import IogurteComFrutas from './pages/html das receitas/iogurte';
+import EspagueteDeAbobrinha from './pages/html das receitas/espaguete';
+import ReceitaSalmão from './pages/html das receitas/salmão';
 
 
 function App() {
@@ -29,6 +39,16 @@ function App() {
           <Route path="/contato" element={<Contato/>} />
           <Route path="/serviço" element={<Serviço/>} />
           <Route path="/sobre" element={<Sobre/>} />
+          <Route path="/CarouselReceitas" element={<CarouselReceitas />} />
+          <Route path="/proteinas" element={<ReceitasDeProteinas />} />
+          <Route path="/saladacolorida" element={<SaladaColorida />} />
+          <Route path="/frango" element={<FrangoGrelhado />} />
+          <Route path="/sucoverde" element={<SucoVerde />} />
+          <Route path="/bolobanana" element={<BoloDeBanana />} />
+          <Route path="/batatadoce" element={<BatataDoce />} />
+          <Route path="/iogurte" element={<IogurteComFrutas />} />
+          <Route path="/espaguete" element={<EspagueteDeAbobrinha />} />
+          <Route path="/salmao" element={<ReceitaSalmão />} />      
           
         </Routes>
         <Footer />
