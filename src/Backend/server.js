@@ -101,3 +101,8 @@ app.listen(port, () => {
 app.listen(port, () => {
     console.log(`Servidor rodando na porta ${port}`);
   });
+
+  process.on('SIGINT', () => {
+    console.log('Servidor encerrado.');
+    process.exit();
+  });

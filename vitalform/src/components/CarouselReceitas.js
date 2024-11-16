@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
-import img1 from '../imagens/imagens-receitas/1.png';
-import img2 from '../imagens/imagens-receitas/2.png';
-import img3 from '../imagens/imagens-receitas/3.png';
+import img1 from '../assets/imagens/imagens-receitas/1.png';
+import img2 from '../assets/imagens/imagens-receitas/2.png';
+import img3 from '../assets/imagens/imagens-receitas/3.png';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const CarouselReceitas = () => (
