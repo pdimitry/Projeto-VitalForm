@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 function FrangoGrelhado() {
     return (
         <div style={{
             width: "80%",
             maxWidth: "800px",
-            margin: "30px auto",
+            margin: "120px auto",
             padding: "20px",
             backgroundColor: "#f9f9f9",
             borderRadius: "8px",
