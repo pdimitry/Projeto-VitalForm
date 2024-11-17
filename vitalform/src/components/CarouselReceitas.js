@@ -8,21 +8,40 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const CarouselReceitas = () => (
   <div>
-    <Carousel 
-      showThumbs={false} 
-      infiniteLoop 
-      autoPlay 
-      showArrows={false} 
+       <div style={{
+      width: '80%',
+      maxWidth: '900px',
+      margin: '30px auto',
+      padding: '20px',
+      backgroundColor: '#fff',
+      borderRadius: '8px',
+      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+      fontFamily: "'Arial', sans-serif",
+      textAlign: 'center'
+    }}>
+      <h1 style={{
+        fontSize: '2.5em',          
+        fontWeight: 'bold',         
+        color: '#555',           
+        marginBottom: '20px',       
+      }}>Dicas De Receitas</h1>
+    </div>
+    <Carousel
+      showThumbs={false}
+      infiniteLoop
+      autoPlay
+      showArrows={false}
       showStatus={false}
-    > 
+    >
       <div>
         <img src={img1} alt="Receitas Fáceis" />
         <div className="carousel-caption">
-          <h3>Receitas Fáceis</h3>
+          <h3>Receitas Rápidas</h3>
           <p>
-            <Link to="/ReceitasDeProteinas">Proteínas</Link>
-            <Link to="/saladaColorida">Salada Colorida</Link>
-            <Link to="/frango">Frango Grelhado</Link>
+          <Link to="/proteinas" style={{ color: 'black'}}>Proteínas</Link>
+          <Link to="/saladaColorida" style={{ color: 'black'}}>Salada Colorida</Link>
+          <Link to="/frango" style={{ color: 'black'}}>Frango Grelhado</Link>
+
           </p>
         </div>
       </div>
@@ -31,9 +50,9 @@ const CarouselReceitas = () => (
         <div className="carousel-caption">
           <h3>Opções Saudáveis</h3>
           <p>
-            <Link to="/sucoVerde">Suco Verde</Link>
-            <Link to="/boloBanana">Bolo de Banana</Link>
-            <Link to="/batataDoce">Batata Doce</Link>
+          <Link to="/sucoVerde" style={{ color: 'black' }}>Suco Verde</Link>
+          <Link to="/boloBanana" style={{ color: 'black' }}>Bolo de Banana</Link>
+          <Link to="/batataDoce" style={{ color: 'black' }}>Batata Doce</Link>
           </p>
         </div>
       </div>
@@ -42,32 +61,106 @@ const CarouselReceitas = () => (
         <div className="carousel-caption">
           <h3>Delícias de Verão</h3>
           <p>
-            <Link to="/Iogurte">Iogurte</Link>
-            <Link to="/Espaguete">Espaguete de Abobrinha</Link>
-            <Link to="/Salmao">Salmão</Link>
+            <Link to="/Iogurte" style={{ color: 'black' }}>Iogurte</Link>
+            <Link to="/Espaguete" style={{ color: 'black' }}>Espaguete de Abobrinha</Link>
+            <Link to="/Salmao" style={{ color: 'black' }}>Salmão</Link>
           </p>
         </div>
       </div>
     </Carousel>
 
-    <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
-      <h1 style={{ textAlign: "center" }}>A Importância da Nutrição</h1>
-      <p style={{ textAlign: "center", fontSize: "16px" }}>
-        A nutrição desempenha um papel vital em nossa saúde e bem-estar. Uma alimentação equilibrada ajuda a prevenir doenças, melhora a energia e promove o funcionamento adequado do corpo. Escolher os alimentos certos pode aumentar a imunidade, melhorar o humor e garantir uma vida mais longa e saudável. Cada refeição é uma oportunidade de cuidar do seu corpo e mente.
+
+    <div
+      style={{
+        width: "90%",
+        maxWidth: "800px",
+        margin: "30px auto",
+        padding: "30px",
+        backgroundColor: "#f0f0f0",
+        borderRadius: "15px",
+        boxShadow: "0 6px 12px rgba(0, 0, 0, 0.2)",
+        textAlign: "center",
+      }}
+    >
+      <h1 style={{ marginBottom: "20px", fontSize: "2em", color: "#333" }}>
+        A Importância da Nutrição
+      </h1>
+      <p
+        style={{
+          fontSize: "1.2em",
+          lineHeight: "1.8",
+          color: "#555",
+          marginBottom: "30px",
+        }}
+      >
+        Uma boa nutrição é essencial para manter o corpo saudável e prevenir
+        doenças. Alimentar-se bem não apenas melhora o bem-estar físico, mas
+        também aumenta a energia, fortalece o sistema imunológico e promove a
+        saúde mental. Escolher alimentos nutritivos e balanceados é fundamental
+        para uma vida plena e equilibrada.
       </p>
-      <div style={{ textAlign: "center" }}>
-        <h2 style={{ marginTop: "20px" }}>Dicas Rápidas:</h2>
-        <ul style={{ display: "inline-block", textAlign: "left" }}>
-          <li>Comece o dia com um café da manhã equilibrado, rico em fibras e proteínas.</li>
-          <li>Inclua pelo menos 5 porções de frutas e vegetais ao longo do dia.</li>
-          <li>Beba ao menos 2 litros de água diariamente para manter-se hidratado.</li>
-          <li>Evite o consumo excessivo de alimentos processados e bebidas açucaradas.</li>
-          <li>Prefira grãos integrais como arroz integral, quinoa e aveia.</li>
-          <li>Modere o consumo de sal para evitar problemas de pressão alta.</li>
-          <li>Inclua fontes de gorduras saudáveis, como azeite de oliva, abacate e castanhas.</li>
-          <li>Planeje suas refeições para evitar desperdício e escolhas pouco saudáveis.</li>
-          <li>Pratique o mindful eating: coma devagar e aprecie cada refeição.</li>
-          <li>Consulte um nutricionista para orientações personalizadas.</li>
+      <div
+        style={{
+          width: "80%",
+          maxWidth: "600px",
+          margin: "0 auto",
+          padding: "20px",
+          backgroundColor: "#f9f9f9",
+          borderRadius: "10px",
+          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+          textAlign: "center",
+        }}
+      >
+        <h2
+          style={{
+            marginBottom: "20px",
+            fontSize: "1.8em",
+            color: "#333",
+          }}
+        >
+          Dicas Rápidas:
+        </h2>
+        <ul
+          style={{
+            listStyleType: "disc",
+            paddingLeft: "20px",
+            textAlign: "left",
+          }}
+        >
+          <li style={{ marginBottom: "10px", lineHeight: "1.5", color: "#555" }}>
+            Comece o dia com um café da manhã equilibrado, rico em fibras e
+            proteínas.
+          </li>
+          <li style={{ marginBottom: "10px", lineHeight: "1.5", color: "#555" }}>
+            Inclua pelo menos 5 porções de frutas e vegetais ao longo do dia.
+          </li>
+          <li style={{ marginBottom: "10px", lineHeight: "1.5", color: "#555" }}>
+            Beba ao menos 2 litros de água diariamente para manter-se hidratado.
+          </li>
+          <li style={{ marginBottom: "10px", lineHeight: "1.5", color: "#555" }}>
+            Evite o consumo excessivo de alimentos processados e bebidas
+            açucaradas.
+          </li>
+          <li style={{ marginBottom: "10px", lineHeight: "1.5", color: "#555" }}>
+            Prefira grãos integrais como arroz integral, quinoa e aveia.
+          </li>
+          <li style={{ marginBottom: "10px", lineHeight: "1.5", color: "#555" }}>
+            Modere o consumo de sal para evitar problemas de pressão alta.
+          </li>
+          <li style={{ marginBottom: "10px", lineHeight: "1.5", color: "#555" }}>
+            Inclua fontes de gorduras saudáveis, como azeite de oliva, abacate e
+            castanhas.
+          </li>
+          <li style={{ marginBottom: "10px", lineHeight: "1.5", color: "#555" }}>
+            Planeje suas refeições para evitar desperdício e escolhas pouco
+            saudáveis.
+          </li>
+          <li style={{ marginBottom: "10px", lineHeight: "1.5", color: "#555" }}>
+            Pratique o mindful eating: coma devagar e aprecie cada refeição.
+          </li>
+          <li style={{ marginBottom: "10px", lineHeight: "1.5", color: "#555" }}>
+            Consulte um nutricionista para orientações personalizadas.
+          </li>
         </ul>
       </div>
     </div>
