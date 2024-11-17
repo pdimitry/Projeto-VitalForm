@@ -6,10 +6,7 @@ import CarouselReceitas from '../components/CarouselReceitas';
 
 const Nutrição = () => (
   <div className="nutrição">
-    
-      <body>
-        <CarouselReceitas />
-      </body>
+    <CarouselReceitas />
   </div>
 );
 

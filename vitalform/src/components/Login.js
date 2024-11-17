@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import '../pages/comunidade.css';
+import './Login.css'; 
 
 function Login() {
-  const [name, setName] = useState('');
-  const [cpf, setCpf] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
@@ -12,7 +11,7 @@ function Login() {
     e.preventDefault();
 
     
-    if (name && cpf && email && password) {
+    if (email && password) {
       alert('Login bem-sucedido!');
     } else {
       setErrorMessage('Por favor, preencha todos os campos.');
@@ -21,30 +20,16 @@ function Login() {
 
   return (
     <div className="login-container">
-      <h2>Cadastro</h2>
+      
+      <h2>Login</h2>
       <form onSubmit={handleSubmit}>
-        <label>
-          Nome:
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-        </label>
-        <label>
-          CPF:
-          <input
-            type="text"
-            value={cpf}
-            onChange={(e) => setCpf(e.target.value)}
-          />
-        </label>
         <label>
           Email:
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
           />
         </label>
         <label>
@@ -53,10 +38,11 @@ function Login() {
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            required
           />
         </label>
         {errorMessage && <p className="error">{errorMessage}</p>}
-        <button type="submit">Cadastrar</button>
+        <button type="submit">Entrar</button>
       </form>
     </div>
   );

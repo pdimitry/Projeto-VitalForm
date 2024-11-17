@@ -1,57 +1,99 @@
-
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 !important;
+    width: 100%;
 }
 
-.navbar-buttons {
+.navbar-nav {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.navbar-buttons-container {
     display: flex;
     align-items: center;
+    background-color: #28a745;
+    padding: 3px 12px;
+    border-radius: 50px;
+    margin-left: 0;
+    margin-right: auto;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-buttons-container .nav-link {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 30px;
+    margin-left: 12px;
+    transition: all 0.3s ease;
+}
+
+.navbar-buttons-container .nav-link:first-child {
+    margin-left: 0;
+}
+
+.navbar-buttons-container .nav-link:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+.navbar-buttons-container .nav-link:active {
+    transform: translateY(1px);
 }
 
 .btn-cadastro {
-    background-color: #28a745 !important;
-    color: white; 
-    padding: 12px 24px !important;
-    border-radius: 5px; 
-    margin-left: 10px; 
-    text-decoration: none;
+    background-color: #28a745;
+    box-shadow: 0 4px 6px rgba(40, 167, 69, 0.3);
 }
 
 .btn-login {
-    background-color: #007bff !important;
-    color: white;
-    padding: 12px 24px !important;
-    border-radius: 5px; 
-    margin-left: 10px; 
-    text-decoration: none; 
+    background-color: #007bff;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
 }
 
 .btn-cadastro:hover, .btn-login:hover {
-    opacity: 0.8; 
+    opacity: 0.9;
+    transform: translateY(-3px);
 }
 
-.btn-cadastro:hover, .btn-login:hover {
-    opacity: 0.8; 
+.btn-cadastro:active, .btn-login:active {
+    transform: translateY(1px);
 }
 
+@media (max-width: 768px) {
+    .navbar-nav {
+        justify-content: flex-start;
+    }
+
+    .navbar-buttons-container {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-top: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .navbar-buttons-container .nav-link {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}
 
 .nav-link {
-    margin: 0 10px; 
     color: #000;
+    margin: 0 10px;
 }
 
 .nav-link:hover {
-    color: #007bff; 
-}
-.navbar-brand {
-    display: flex;
-    align-items: center; 
+    color: #007bff;
 }
 
 .navbar-brand img {
     margin-right: 10px;
 }
-

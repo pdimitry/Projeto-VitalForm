@@ -7,8 +7,8 @@ const Header = () => (
     <header>
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
-                <div className="navbar-brand d-flex align-items-center"> {/* Usar d-flex para alinhar logo e texto */}
-                    <img src={logoNavBar} alt="Logo VitalForm" height="40" width="40" className="me-2" /> {/* Classe me-2 para margem à direita */}
+                <div className="navbar-brand d-flex align-items-center">
+                    <img src={logoNavBar} alt="Logo VitalForm" height="40" width="40" className="me-2" />
                     <Link className="nav-link" to="/">VitalForm</Link>
                 </div>
                 <button
@@ -40,8 +40,7 @@ const Header = () => (
                             <Link className="nav-link" to="/bemestar">Bem Estar</Link>
                         </li>
                     </ul>
-                    
-                    <div className="navbar-buttons">
+                    <div className="navbar-buttons-container">
                         <Link className="nav-link btn-cadastro" to="/cadastro">Cadastro</Link>
                         <Link className="nav-link btn-login" to="/login">Login</Link>
                     </div>

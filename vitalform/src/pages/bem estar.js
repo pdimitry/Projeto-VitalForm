@@ -13,7 +13,7 @@ import img7 from '../assets/imagens/imagens-bem estar/metas-e-objetivos.jpg';
 
 const Bemestar = () => (
     <div className="bemestar">
-    <body>
+    
       <h1>Dicas de Bem Estar</h1>
       <div className="container">
         <div className="row">
@@ -133,7 +133,7 @@ const Bemestar = () => (
 </div>
         </div>
       </div>
-    </body>
+   
   </div>
   
  
