@@ -1,12 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
-import imgPeito from '../assets/imagens/imagens-fitness/treinoPeito.jpg'
+import imgPeito from '../assets/imagens/imagens-fitness/treinoPeito.jpg';
+import imgCostas from '../assets/imagens/imagens-fitness/trienoCostas.jpg';
+import imgPerna from '../assets/imagens/imagens-fitness/treinoPerna.jpg';
+import imgBiceps from '../assets/imagens/imagens-fitness/treinoBiceps.jpg';
+import imgTriceps from '../assets/imagens/imagens-fitness/treinoTriceps.jpg';
+import imgOmbro from '../assets/imagens/imagens-fitness/treinoOmbro.jpg';
 
 const Treino = () => {
 
   const downloadTreino = (tipoTreino) => {
     let treinoContent;
-
 
     switch (tipoTreino) {
       case 'peito':
@@ -24,10 +28,13 @@ const Treino = () => {
       case 'perna':
         treinoContent = "Treino de Perna:\n1. Agachamento Livre - 4x10\n2. Leg Press - 4x10\n3. Cadeira Extensora - 3x12\n4. Cadeira Flexora - 3x12";
         break;
+        case 'ombro':
+          treinoContent = "Treino de ombro:\n1. Desenvolvimento Maquina - 4x10\n2. Elevação lateral com Halteres - 4x10\n3. Eleveção Frontal na Polia com Corda - 3x12\n4. Crucifixo inverso Máquina - 3x12";
+          break;
+
       default:
         treinoContent = '';
     }
-
 
     const blob = new Blob([treinoContent], { type: 'text/plain' });
     const link = document.createElement('a');
@@ -36,58 +43,118 @@ const Treino = () => {
     link.click();
   };
 
+  const BackgroundContainer = styled.div`
+    background: linear-gradient: #A9B388;
+    padding: 50px 50px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  `;
+
+  const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  `;
+
+  const Title = styled.h1`
+  font-size: 1.2em; 
+  color: ${(props) => props.color || "#28a745"}; 
+  margin-bottom: 15px; 
+  font-weight: 700; 
+  text-align: ${(props) => props.align || "left"}; 
+  line-height: 1.2;
+  text-transform: ${(props) => props.transform || "none"};
+  letter-spacing: 0.7px; 
+
+  &:hover {
+    color: ${(props) => props.hoverColor || "#5F6F52"}; 
+  }
+
+`;
+
+  const Subtitle = styled.p`
+    font-size: 0.3em; 
+    color: ${(props) => props.color || "#A9B388"};
+    margin-bottom: 15px; 
+    line-height: 1.6; 
+    text-align: ${(props) => props.align || "flex"}; 
+    font-weight: ${(props) => props.weight || "normal"}; 
+    letter-spacing: 0.3px; 
+  `;
+
   const ContainerCards = styled.div`
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 100px;
+  `;
+
+  const Card = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
-  `
+    background-color: #28a745;
+    width: 310px;
+    height: 300px;
+  `;
 
-  const Card = styled.div`
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #28a745;
-      width: 310px;
-      height: 300px;
-    `
+  const Button = styled.button`
+    background-color: #5F6F52;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 
-    const Img = styled.img`
-      margin-top: 10px;
-    `
+    &:hover {
+      background-color: #A9B388;
+    }
+
+    &:active {
+      background-color: #A9B388;
+    }
+  `;
 
   return (
-    <div style={{ textAlign: 'center', marginTop: '50px' }}>
-      <h1>Monte seu Treino</h1>
-      <p>Selecione o treino desejado para baixar o bloco de notas com o plano</p>
+    <BackgroundContainer>
+      <Container>
+        <Title>Monte seu Treino</Title>
+        <Subtitle>Selecione o treino desejado, e receberá seu planejamento de treino</Subtitle>
 
-      <ContainerCards>
-
-        <Card>
-          <Img width={300} height={210} src={imgPeito} alt="Imagem 2" />
-          <button onClick={() => downloadTreino('peito')}>Treino de Peito</button>
-        </Card >
-        <Card>
-          <h4>IMG</h4>
-          <button onClick={() => downloadTreino('costas')}>Treino de Costas</button>
-        </Card >
-        <Card>
-          <h4>IMG</h4>
-          <button onClick={() => downloadTreino('biceps')}>Treino de Bíceps</button>
-        </Card >
-        <Card>
-          <h4>IMG</h4>
-          <button onClick={() => downloadTreino('triceps')}>Treino de Tríceps</button>
-        </Card >
-        <Card>
-          <h4>IMG</h4>
-          <button onClick={() => downloadTreino('perna')}>Treino de Perna</button>
-        </Card >
-      </ContainerCards>
-    </div>
+        <ContainerCards>
+          <Card>
+            <img width={310} height={280} src={imgPeito} alt="Treino de Peito" />
+            <Button onClick={() => downloadTreino('peito')}>Treino de Peito</Button>
+          </Card>
+          <Card>
+            <img width={310} height={280} src={imgCostas} alt="Treino de Costas" />
+            <Button onClick={() => downloadTreino('costas')}>Treino de Costas</Button>
+          </Card>
+          <Card>
+            <img width={310} height={280} src={imgBiceps} alt="Treino de Bíceps" />
+            <Button onClick={() => downloadTreino('biceps')}>Treino de Bíceps</Button>
+          </Card>
+          <Card>
+            <img width={310} height={280} src={imgTriceps} alt="Treino de Tríceps" />
+            <Button onClick={() => downloadTreino('triceps')}>Treino de Tríceps</Button>
+          </Card>
+          <Card>
+            <img width={310} height={280} src={imgPerna} alt="Treino de Perna" />
+            <Button onClick={() => downloadTreino('perna')}>Treino de Perna</Button>
+          </Card>
+          <Card>
+            <img width={310} height={280} src={imgOmbro} alt="Treino de Ombro" />
+            <Button onClick={() => downloadTreino('ombro')}>Treino de Ombro</Button>
+          </Card>
+        </ContainerCards>
+      </Container>
+    </BackgroundContainer>
   );
-}
+};
 
 export default Treino;
