@@ -1,0 +1,177 @@
+.comunidade {
+  background-color: #f4f4f4;
+  padding: 30px 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  color: #2c3e50;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #7f8c8d;
+  font-size: 18px;
+}
+
+.formulario {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin: auto;
+}
+
+.telegram-link {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.telegram-link a {
+  color: #0088cc;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.telegram-link a:hover {
+  text-decoration: underline;
+}
+
+.imc-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.imc-image {
+  width: 200px;
+  max-width: 400px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  color: #34495e;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.resultado-imc {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.resultado-imc h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+footer nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer nav ul li a:hover {
+  text-decoration: underline;
+}
+
+footer h3 {
+  display: flex;
+  justify-content: left;
+  padding-left: 10px;
+}
+
+.footer-center {
+  display: flex;
+  justify-content: center;
+}
+
+.teste {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .formulario {
+    padding: 25px;
+  }
+
+  .imc-container {
+    margin-top: 20px;
+  }
+
+  .input-group input {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+
+  .resultado-imc h3 {
+    font-size: 20px;
+  }
+}
